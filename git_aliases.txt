@@ -2,4 +2,4 @@ alias.up !git remote update -p; git merge --ff-only @{u}
 alias.home !git checkout preprod; git up
 alias.aliases config --get-regexp ^alias\.
 alias.pom push origin master
-alias.poc push origin @{u}
+alias.poc !git push origin @{u}
