@@ -10,5 +10,8 @@
 	home = "!git checkout preprod; git up"
 	aliases = config --get-regexp ^alias\\.
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
-	pom = push origin master
 	po = "!git push origin $(git branch-name)"
+	unpublish = "!git push origin :$(git branch-name)"
+	plop = pull origin preprod
+	rhH = "!git reset --hard HEAD~$1 #;"
+	c = "!git commit -m \"$1\" #;"
