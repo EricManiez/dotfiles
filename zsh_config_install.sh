@@ -6,4 +6,4 @@ mv -v .gitconfig .zsh_save/.gitconfig
 ln -s zsh_config/.zsh .zsh
 ln -s zsh_config/.zshrc .zshrc
 ln -s zsh_config/.gitconfig .gitconfig
-echo "Installation succesful!"
+echo "\033[0;32mInstallation succesful!\033[0m"
