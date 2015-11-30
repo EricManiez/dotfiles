@@ -1,0 +1,14 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Eric Maniez
+	email = e.maniez@weezevent.com
+[alias]
+	up = "!git remote update -p; git merge --ff-only @{u}"
+	home = "!git checkout preprod; git up"
+	aliases = config --get-regexp ^alias\\.
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	pom = push origin master
+	po = "!git push origin $(git branch-name)"
