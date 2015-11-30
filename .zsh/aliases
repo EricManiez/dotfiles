@@ -1,0 +1,24 @@
+###############
+### ALIASES ###
+###############
+
+alias l='ls -la'
+alias CC='cd /Users/emaniez/project/guichet/ && php console cache:clear && cd -'
+alias compW='cd /Users/emaniez/project/Weezevent && php composer.phar install && cd -'
+alias compG='cd /Users/emaniez/project/guichet && php composer.phar install && cd -'
+alias cdW='cd /Users/emaniez/project/Weezevent'
+alias cdG='cd /Users/emaniez/project/guichet'
+
+
+#Git-related aliases
+alias gits='git status'
+alias gita='git add -A'
+alias gitc='git commit -m'
+alias gitp='git push'
+alias gitpo='git push origin'
+alias gitpl='git pull'
+alias gitplo='git pull origin'
+alias gitplop='git pull origin preprod'
+alias gitch='git checkout'
+alias gitr='git reset'
+alias gitrh='git reset --hard'
