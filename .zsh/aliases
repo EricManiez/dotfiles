@@ -2,7 +2,7 @@
 ### ALIASES ###
 ###############
 
-alias l='ls -la'
+alias l='ls -lahG'
 alias CC='cd /Users/emaniez/project/guichet/ && php console cache:clear && cd -'
 alias compW='cd /Users/emaniez/project/Weezevent && php composer.phar install && cd -'
 alias compG='cd /Users/emaniez/project/guichet && php composer.phar install && cd -'
