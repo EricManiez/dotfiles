@@ -1,4 +1,4 @@
-export PATH="/Users/emaniez/project/weezexploitation/bin:$PATH"
+export PATH="/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
 
 # Completion
 	autoload -U compinit
