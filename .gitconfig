@@ -15,3 +15,5 @@
 	plop = pull origin preprod
 	rhH = "!git reset --hard HEAD~$1 #;"
 	c = "!git commit -m \"$1\" #;"
+[core]
+	excludesfile = /nfs/zfs-student-2/users/emaniez/zsh_config/.gitignore_global
