@@ -1,4 +1,4 @@
-export PATH="/usr/local/mysql/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
+export PATH="/usr/local/mysql/bin:/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
 
 # Completion
 	autoload -U compinit

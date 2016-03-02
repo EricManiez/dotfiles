@@ -8,6 +8,7 @@ alias compW='cd /Users/emaniez/project/Weezevent && php composer.phar install &&
 alias compG='cd /Users/emaniez/project/guichet && php composer.phar install && cd -'
 alias cdW='cd /Users/emaniez/project/Weezevent'
 alias cdG='cd /Users/emaniez/project/guichet'
+alias ocaml='rlwrap ocaml'
 
 
 #Git-related aliases
