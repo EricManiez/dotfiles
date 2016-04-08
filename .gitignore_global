@@ -4,3 +4,6 @@ a.out
 *.cmx
 *.o
 ._*
+**/.idea/**
+.DS_Store
+a.out
