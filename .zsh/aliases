@@ -9,6 +9,7 @@ alias compG='cd /Users/emaniez/project/guichet && php composer.phar install && c
 alias cdW='cd /Users/emaniez/project/Weezevent'
 alias cdG='cd /Users/emaniez/project/guichet'
 alias ocaml='rlwrap ocaml'
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 
 #Git-related aliases

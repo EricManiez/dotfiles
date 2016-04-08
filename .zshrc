@@ -1,4 +1,4 @@
-export PATH="/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
+export PATH="/nfs/2014/e/emaniez/.brew/bin:/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
 
 # Completion
 	autoload -U compinit
@@ -30,3 +30,6 @@ export PATH="/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/w
 	PROMPT='%F{green}%B%n%F{white} | %f%F{yellow}%~%b%F{red} > %f'
 # Right Prompt : "(git)-[branch]-"
 	RPROMPT='%F{cyan}%B%(2v.%2v.)%f%b'
+
+# OPAM configuration
+. /nfs/2014/e/emaniez/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
