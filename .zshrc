@@ -1,4 +1,4 @@
-export PATH="~/miniconda2/bin:/usr/local/sbin:/usr/local/mysql/bin:/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
+export PATH="/nfs/2014/e/emaniez/.brew/bin:/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
 
 # Completion
 	autoload -U compinit

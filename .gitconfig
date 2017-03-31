@@ -18,4 +18,3 @@
 	me = log --author=Maniez --oneline
 [core]
 	excludesfile = ~/zsh_config/.gitignore_global
-

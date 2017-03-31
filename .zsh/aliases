@@ -3,18 +3,14 @@
 ###############
 
 alias l='ls -lah'
-alias CC='cd /Users/emaniez/project/guichet/ && php console cache:clear && cd -'
-alias cdW='cd /Users/emaniez/project/Weezevent'
-alias cdG='cd /Users/emaniez/project/guichet'
-alias cdA='cd /Users/emaniez/project/account-weezevent'
+
 alias ocaml='rlwrap ocaml'
+
+#Docker-related aliases
 alias docker_destroy='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi -f $(docker images -q)'
 alias docker_top='docker stats $(docker ps -q)'
-alias docker_up='docker-compose up'
 alias docker_stop='docker stop $(docker ps -a -q)'
-alias docker_reload='docker_stop ; docker_up'
-alias docker_ssh='docker exec -it docker_www_1 bash'
-
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 #Git-related aliases
 alias gits='git status'
