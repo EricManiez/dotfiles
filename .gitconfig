@@ -7,14 +7,15 @@
 	email = e.maniez@weezevent.com
 [alias]
 	up = "!git remote update -p; git merge --ff-only @{u}"
-	home = "!git checkout preprod; git up"
+	home = "!git checkout master; git up"
 	aliases = config --get-regexp ^alias\\.
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	po = "!git push origin $(git branch-name)"
 	unpublish = "!git push origin :$(git branch-name)"
-	plop = pull origin preprod
+	plom = "!git pull origin master"
 	rhH = "!git reset --hard HEAD~$1 #;"
 	c = "!git commit -m \"$1\" #;"
+	me = log --author=Maniez --oneline
 [core]
 	excludesfile = ~/zsh_config/.gitignore_global
 
