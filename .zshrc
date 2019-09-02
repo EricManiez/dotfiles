@@ -1,11 +1,15 @@
-export PATH="/nfs/2014/e/emaniez/.brew/bin:/nfs/zfs-student-2/users/emaniez/.brew/bin:/Users/emaniez/project/weezexploitation/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export LANG=en_US.UTF-8
 
 # Completion
 	autoload -U compinit
 	compinit
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
 
 # Git completion
-	source ~/.zsh/git-completion.sh
+	fpath=(~/.zsh $fpath)
 
 # Command correction
 	setopt correctall
@@ -34,4 +38,10 @@ export PATH="/nfs/2014/e/emaniez/.brew/bin:/nfs/zfs-student-2/users/emaniez/.bre
 # OPAM configuration
 . /Users/emaniez/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
+# Auto-suggestions
+source ~/.zsh/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi # add autocomplete permanently to your zsh shell
+export PATH="/usr/local/sbin:$PATH"

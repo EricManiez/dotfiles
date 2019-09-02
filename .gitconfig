@@ -3,11 +3,11 @@
 	smudge = git-lfs smudge %f
 	required = true
 [user]
-	name = Eric Maniez
-	email = e.maniez@weezevent.com
+	name = emaniez
+	email = eric.maniez@itsfactory.fr
 [alias]
 	up = "!git remote update -p; git merge --ff-only @{u}"
-	home = "!git checkout master; git up"
+	home = "!git checkout develop; git up; git cleanup"
 	aliases = config --get-regexp ^alias\\.
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	po = "!git push origin $(git branch-name)"
@@ -16,5 +16,7 @@
 	rhH = "!git reset --hard HEAD~$1 #;"
 	c = "!git commit -m \"$1\" #;"
 	me = log --author=Maniez --oneline
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 [core]
-	excludesfile = ~/zsh_config/.gitignore_global
+	excludesfile = /Users/emaniez/zsh_config/.gitignore_global
+	autocrlf = input
