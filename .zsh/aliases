@@ -10,8 +10,6 @@ alias ocaml='rlwrap ocaml'
 alias docker_destroy='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi -f $(docker images -q)'
 alias docker_top='docker stats $(docker ps -q)'
 alias docker_stop='docker stop $(docker ps -a -q)'
-alias docker_start_odoo='docker start container-odoo-mt-main-db container-odoo-mt-main-odoo'
-alias docker_restart_odoo='docker_stop && docker_start_odoo'
 alias docker_rabbit='docker run -d --hostname my-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management'
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
@@ -24,5 +22,3 @@ alias gitp='git push'
 alias gitpl='git pull'
 alias gitch='git checkout'
 alias gitr='git reset'
-
-alias eir_helper='f() { cd /Users/emaniez/ITSF/eir/project_cloner ; pipenv run ./project_cloner.py "$@" ; cd - };f'

@@ -47,7 +47,7 @@ RPROMPT='%F{cyan}%B%(2v.%2v.)%f%b'
 . /Users/emaniez/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # Auto-suggestions
-source ~/.zsh/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
