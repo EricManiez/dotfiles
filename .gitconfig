@@ -7,7 +7,7 @@
 	email = eric.maniez@itsfactory.fr
 [alias]
 	up = "!git remote update -p; git merge --ff-only @{u}"
-	home = "!git checkout develop; git up; git cleanup"
+	home = "!git checkout master; git up; git cleanup"
 	aliases = config --get-regexp ^alias\\.
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	po = "!git push origin $(git branch-name)"
@@ -20,3 +20,7 @@
 [core]
 	excludesfile = /Users/emaniez/zsh_config/.gitignore_global
 	autocrlf = input
+[init]
+	templatedir = ~/.git-templates
+[credential]
+	helper = osxkeychain

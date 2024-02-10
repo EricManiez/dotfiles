@@ -25,4 +25,4 @@ alias gitpl='git pull'
 alias gitch='git checkout'
 alias gitr='git reset'
 
-alias eir_update='cd /Users/emaniez/ITSF/eir/project_cloner ; pipenv run ./project_cloner.py ; cd -'
+alias eir_helper='f() { cd /Users/emaniez/ITSF/eir/project_cloner ; pipenv run ./project_cloner.py "$@" ; cd - };f'
